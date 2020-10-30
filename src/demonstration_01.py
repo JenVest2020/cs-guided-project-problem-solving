@@ -54,5 +54,12 @@ write a function that retrieves the first n elements from a list
 
 
 def last(a, n):
-    # Your code here
+    if n > len(a):
+        return 'invalid'
+    elif n == 0:
+        return []
+    else:
+        #return [len(a) - n : len(a)]
+        #return a slice of list a[-n : ]
+        return a[-n: ]
 
